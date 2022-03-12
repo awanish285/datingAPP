@@ -5,6 +5,7 @@ import com.awanish.dating.dao.UserAccountDaoImpl;
 import com.awanish.dating.model.Interest;
 import com.awanish.dating.model.UserAccount;
 
+//This is controller bheave like presentation layer...
 public class UserAccountController {
 	
 	public static void main(String []args)
@@ -13,7 +14,7 @@ public class UserAccountController {
 		controller.findAllUser();
 	}
 	
-	
+	//This method is used to register the User 
 	public void registerUser()
 	{
 		UserAccountDao dao = new UserAccountDaoImpl();
@@ -36,7 +37,7 @@ public class UserAccountController {
 		
 	}
 	
-	
+	//This method is used to get all the user.
 	public void findAllUser()
 	{
 		UserAccountDao dao = new UserAccountDaoImpl();
