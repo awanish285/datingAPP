@@ -41,6 +41,7 @@ public class UserAccountController {
 	public void findAllUser()
 	{
 		UserAccountDao dao = new UserAccountDaoImpl();
+		//creating object of userAccount to set the properties
 		UserAccount userAccount = new UserAccount();
 		userAccount.setId(1);
 		userAccount.setUserName("John");
@@ -50,6 +51,7 @@ public class UserAccountController {
 		userAccount.setEmail("abc@gmail.com");
 		userAccount.setPassword("password");
 		userAccount.setPhoneNumber("1234567890");
+		//creating the object of interset to set the properties 
 		Interest interest = new Interest();
 		interest.setId(1);
 		interest.setLikes("Watching webSeries");
@@ -57,7 +59,7 @@ public class UserAccountController {
 		userAccount.setInterest(interest);
 		dao.save(userAccount);
 		
-		
+		//creating the object of userAccount to set the propertites for second user
 		UserAccount userAccount2 = new UserAccount();
 		userAccount2.setId(2);
 		userAccount2.setUserName("John");
@@ -67,6 +69,7 @@ public class UserAccountController {
 		userAccount2.setEmail("abc@gmail.com");
 		userAccount2.setPassword("password");
 		userAccount2.setPhoneNumber("1234567890");
+		//creating the object of interset to set the properties 
 		Interest interest2 = new Interest();
 		interest2.setId(1);
 		interest2.setLikes("Watching webSeries");
