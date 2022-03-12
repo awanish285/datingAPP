@@ -75,8 +75,9 @@ public class UserAccountController {
 		interest2.setLikes("Watching webSeries");
 		interest2.setHobbies("playing cricket");
 		userAccount2.setInterest(interest);
+		//saving the data..
 		dao.save(userAccount2);
-		
+		//creating the object of userAccount to set the propertites for third user
 		UserAccount userAccount3 = new UserAccount();
 		userAccount3.setId(3);
 		userAccount3.setUserName("John");
@@ -86,6 +87,7 @@ public class UserAccountController {
 		userAccount3.setEmail("abc@gmail.com");
 		userAccount3.setPassword("password");
 		userAccount3.setPhoneNumber("1234567890");
+		//creating the object of interset to set the properties 
 		Interest interest3 = new Interest();
 		interest3.setId(1);
 		interest3.setLikes("Watching webSeries");
