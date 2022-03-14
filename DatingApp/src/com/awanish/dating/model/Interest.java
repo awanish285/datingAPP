@@ -1,5 +1,6 @@
 package com.awanish.dating.model;
 
+//Model class interset of the user
 public class Interest {
 
 	private int id;

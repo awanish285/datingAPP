@@ -1,7 +1,7 @@
 package com.awanish.dating.model;
 
 import java.util.Objects;
-
+//Model class of UserAccount data.This model class depends on interset..
 public class UserAccount {
 
 	private int id;
