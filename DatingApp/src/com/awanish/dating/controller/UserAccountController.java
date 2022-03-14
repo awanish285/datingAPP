@@ -31,6 +31,7 @@ public class UserAccountController {
 		interest.setLikes("Watching webSeries");
 		interest.setHobbies("playing cricket");
 		userAccount.setInterest(interest);
+		//this method is used to save the userAccount data
 		dao.save(userAccount);
 		
 		System.out.println(dao.findById(1));
@@ -93,6 +94,7 @@ public class UserAccountController {
 		interest3.setLikes("Watching webSeries");
 		interest3.setHobbies("playing cricket");
 		userAccount3.setInterest(interest3);
+		//this is used to save the data
 		dao.save(userAccount3);
 		System.out.println(dao.findMatchers(32,"Austinsss"));
 		
