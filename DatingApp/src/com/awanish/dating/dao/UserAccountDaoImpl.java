@@ -11,7 +11,7 @@ import com.awanish.dating.model.UserAccount;
 //UserAccountDaoImpl class implent UserAccountDao and interact with databases
 
 public class UserAccountDaoImpl implements UserAccountDao {
-
+    //This map is used as inmemory databases
 	Map<Integer, UserAccount> userAccounts = new HashMap();
 
     //this method is used to save the UserAccount detais
@@ -32,7 +32,7 @@ public class UserAccountDaoImpl implements UserAccountDao {
 	public List<UserAccount> findAll() {
 		return new ArrayList<UserAccount>(userAccounts.values());
 	}
-
+    //this method is used to find the matches account.
 	@Override
 	public List<UserAccount> findMatchers(int age, String city) {
 
