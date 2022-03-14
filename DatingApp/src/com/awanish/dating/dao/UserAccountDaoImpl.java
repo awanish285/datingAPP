@@ -14,19 +14,20 @@ public class UserAccountDaoImpl implements UserAccountDao {
 
 	Map<Integer, UserAccount> userAccounts = new HashMap();
 
+    //this method is used to save the UserAccount detais
 	@Override
 	public void save(UserAccount userAccount) {
 
 		userAccounts.put(userAccount.getId(), userAccount);
 
 	}
-
+    //This method is used to find the useraccount by ID
 	@Override
 	public UserAccount findById(int id) {
 
 		return userAccounts.get(id);
 	}
-
+    //This method is used to get the All userAccount
 	@Override
 	public List<UserAccount> findAll() {
 		return new ArrayList<UserAccount>(userAccounts.values());
@@ -48,6 +49,7 @@ public class UserAccountDaoImpl implements UserAccountDao {
 		return matches;
 	}
 
+    //This method is used to delete the userAccount.
 	@Override
 	public void delete(int id) {
 		
