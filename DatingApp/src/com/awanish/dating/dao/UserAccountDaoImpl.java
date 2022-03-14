@@ -8,6 +8,8 @@ import java.util.Map;
 
 import com.awanish.dating.model.UserAccount;
 
+//UserAccountDaoImpl class implent UserAccountDao and interact with databases
+
 public class UserAccountDaoImpl implements UserAccountDao {
 
 	Map<Integer, UserAccount> userAccounts = new HashMap();

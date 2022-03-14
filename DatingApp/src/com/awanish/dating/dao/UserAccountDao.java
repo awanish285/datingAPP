@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.awanish.dating.model.UserAccount;
 
+//UserAccount Dao class all method implements by Impl class
 public interface UserAccountDao {
 	
 	void save(UserAccount userAccount);
