@@ -95,12 +95,12 @@ public class UserAccount {
 	public void setInterest(Interest interest) {
 		this.interest = interest;
 	}
-
+    //this method is used to check the hashCode
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
-
+    //this method is used to check the equals 
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
