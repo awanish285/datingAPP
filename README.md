@@ -62,4 +62,8 @@ public class HashMapExample1{
    }  
 }  
 
+#Note
+
+No Duplicate Key on HashMap
+You cannot store duplicate keys in HashMap. However, if you try to store duplicate key with another value, it will replace the value.
 ====================================================================================================================================================================
