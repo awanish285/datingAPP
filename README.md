@@ -35,6 +35,13 @@ GIt
 5) It allows us to store the null elements as well, but there should be only one null key. Since Java 5, it is denoted as HashMap<K,V>, where K stands for key and V for value. It inherits the AbstractMap class and implements the Map interface.
 
 
+#Points to remember
 
+1) Java HashMap contains values based on the key.
+2) Java HashMap contains only unique keys.
+3) Java HashMap may have one null key and multiple null values.
+4) Java HashMap is non synchronized.
+5) Java HashMap maintains no order.
+6) The initial default capacity of Java HashMap class is 16 with a load factor of 0.75.
 
 ====================================================================================================================================================================
