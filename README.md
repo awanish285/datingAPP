@@ -64,6 +64,59 @@ public class HashMapExample1{
 
 #Note
 
-No Duplicate Key on HashMap
-You cannot store duplicate keys in HashMap. However, if you try to store duplicate key with another value, it will replace the value.
+1) No Duplicate Key on HashMap
+2) You cannot store duplicate keys in HashMap. However, if you try to store duplicate key with another value, it will replace the value.
+
+
+#Java HashMap example to add() elements
+
+#Here, we see different ways to insert elements.
+
+
+import java.util.*;  
+class HashMap1{  
+ public static void main(String args[]){  
+   HashMap<Integer,String> hm=new HashMap<Integer,String>();    
+    System.out.println("Initial list of elements: "+hm);  
+      hm.put(100,"Amit");    
+      hm.put(101,"Vijay");    
+      hm.put(102,"Rahul");   
+       
+      System.out.println("After invoking put() method ");  
+      for(Map.Entry m:hm.entrySet()){    
+       System.out.println(m.getKey()+" "+m.getValue());    
+      }  
+        
+      hm.putIfAbsent(103, "Gaurav");  
+      System.out.println("After invoking putIfAbsent() method ");  
+      for(Map.Entry m:hm.entrySet()){    
+           System.out.println(m.getKey()+" "+m.getValue());    
+          }  
+      HashMap<Integer,String> map=new HashMap<Integer,String>();  
+      map.put(104,"Ravi");  
+      map.putAll(hm);  
+      System.out.println("After invoking putAll() method ");  
+      for(Map.Entry m:map.entrySet()){    
+           System.out.println(m.getKey()+" "+m.getValue());    
+          }  
+ }  
+}  
+
+#output
+
+Initial list of elements: {}
+After invoking put() method 
+100 Amit
+101 Vijay
+102 Rahul
+After invoking putIfAbsent() method 
+100 Amit
+101 Vijay
+102 Rahul
+103 Gaurav
+After invoking putAll() method 
+100 Amit
+101 Vijay
+102 Rahul
+103 Gaurav
 ====================================================================================================================================================================
